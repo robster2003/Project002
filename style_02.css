@@ -1,0 +1,127 @@
+/* Body Style */
+
+body {
+ margin-left: auto; 
+ margin-right: auto;
+ max-width: 960px; 
+ min-width: 640px; 
+ width: 95%; 
+}
+
+#main2 img {
+    width: 200px;
+    float: left;
+    margin: 2.5px;
+}
+
+footer {
+    height: 100%
+}
+
+#main2 p {
+    clear: both;
+}
+
+#list1 {
+    float: left;
+}
+#list2 {
+    float: left;
+}
+
+/* Typography */
+
+#main2 p {
+    font-family: cursive;
+    font-size: 16px;
+    padding: 5px;
+    margin: 10px;
+}
+
+Footer > address {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+/* Body Grid */
+
+body { 
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ grid-template-areas: "header header" 
+ "intro faq" 
+ "articles faq" 
+ "footer footer";
+  grid-column-gap: 15px;  
+}
+
+body > header { 
+ grid-row: 1; 
+ grid-column: 1/-1; 
+}
+
+body > article {grid-area: intro;}
+body > aside {grid-area: faq;}
+body > section {grid-area: articles;}
+body > footer {grid-area: footer;}
+
+/* Grid Styles for Nested Grid */
+
+
+section > h1 { 
+ grid-area: 1/1/2/3;
+ text-align: center;
+}
+
+body > * { 
+ outline: 2px dashed red; 
+}
+
+section > * { 
+ outline: 2px dashed blue; 
+}
+
+/* Horizontal Navigation Styles */
+
+
+body { 
+ line-height: 1.9em; 
+}
+
+header {
+    background-color: #c96868;
+}
+
+#main1 a {
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    line-height: 1.4em;
+    text-align: center;
+}
+#main1 li { 
+ display: block; 
+ float: left; 
+}
+#main1 a { 
+ display: block; 
+ text-align: center; 
+}
+
+
+body > header > img { 
+ display: block; 
+ width: 100%; 
+}
+body > header > #main1 li { 
+ width: 20%; 
+}
+
+
+
+
+
+
+
+
